@@ -1,0 +1,388 @@
+
+body {
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  background-image: url(assets/fondo-tela.jpg);
+  background-repeat: repeat-y; 
+  background-size: cover; 
+  background-position: top center;
+  background-attachment: fixed; 
+
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+
+
+@font-face {
+  font-family: "texgyreheros";
+  src: url("../assets/texgyreheros-regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "texgyreheros";
+  src: url("../assets/texgyreheros-italic.otf") format("otf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "texgyreheros";
+  src: url("../assets/texgyreheros-bold.otf") format("otf");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABCDiatype";
+  src: url("../assets/ABCDiatype-Regular-Trial.otf") format("otf");
+  font-weight: 200;
+  font-style: regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABCDiatype";
+  src: url("../assets/ABCDiatype-Medium-Trial.otf") format("otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABCDiatype";
+  src: url("../assets/ABCDiatype-Bold-Trial.otf") format("otf");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+.marca{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  margin:5px
+
+}
+
+.marca h1{
+   font-family: "texgyreheros", sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 80px;
+   letter-spacing: -0.30rem;
+   margin:0;
+}
+
+.marca h2 {
+  font-family: "ABCDiatype", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin:0;
+}
+
+.marca h4{
+  font-family: "ABCDiatype", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  margin:0;
+  text-transform: uppercase;
+
+}
+
+
+a{
+  text-decoration: none; 
+}
+
+.sidebar ul li a {
+   font-family: "texgyreheros", sans-serif;
+   font-weight: 400;
+   font-style:italic;
+    font-size: 50px;
+    display: block;
+    color:whitesmoke;
+    transition: all 0.3s ease-in-out;
+    &:hover
+  {
+    color:#FF98E9;
+    cursor:pointer;
+  }
+}
+
+.custom-cursor {
+  width: 70px;
+  height: 50px;
+  
+  border-radius: 30%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.header-menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.button{
+    background-color: transparent;
+    border:none;
+    padding: 0 50px ;
+    font-family: "texgyreheros", sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 80px;
+   letter-spacing: -0.30rem;
+   margin:0;
+   &:hover
+  {
+    color:#FF98E9;
+    cursor:pointer;
+  }
+  
+}
+
+.sidebar {
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    mix-blend-mode: difference;
+    
+}
+
+.sidebar ul li {
+    overflow: hidden;
+    padding-bottom: 50px;
+     mix-blend-mode: difference;
+}
+
+.close{
+  padding:40px 40px 0 40px;
+   font-family: "texgyreheros", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  &:hover
+  {
+    color:#025a2c;
+    cursor:pointer;
+  }
+}
+
+.primary-menu{
+  margin-top: 50px;
+
+}
+
+
+.sidebar {
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.text {
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+}
+
+.gallery{
+  height: 200vh;
+  position:relative;
+
+  
+}
+
+
+.delayed-section {
+  position: absolute;
+  width: 30vw;
+  
+ 
+}
+.delayed-section .inner-container {
+  will-change: transform;
+}
+.delayed-section img {
+  max-width: 100%;
+  will-change: transform;
+  display: block;
+}
+
+.inner-container{
+  cursor: pointer;
+}
+/* Posicionamientos individuales */
+
+#del1 {
+  top: 10vh;
+  left: 10vw;
+}
+#del2 {
+  top: 15vh;
+  left: 40vw;
+}
+#del3 {
+  top: 12vh;
+  left: 70vw;
+}
+
+#del4 {
+  top: 60vh;
+  left:5vw;
+}
+
+#del5 {
+  top: 70vh;
+  left: 30vw;
+}
+
+#del6 {
+  top: 80vh;
+  left: 55vw;
+}
+
+#del7 {
+  top: 60vh;
+  left: 80vw;
+}
+
+
+
+/*texto intro*/
+.intro{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:60vh;
+ 
+}
+
+.intro p{
+  padding:50px;
+  font-family: "ABCDiatype", sans-serif;
+  font-style: regular;
+  font-weight: 200;
+  font-size: 50px;
+  position:fixed;
+  
+
+}
+
+@media (max-width: 768px) {
+  /* Oculta el cursor personalizado en móviles */
+  .custom-cursor {
+    display: none;
+  }
+
+  /* Marca: títulos */
+  .marca {
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+
+  .marca h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .marca h2 {
+    font-size: 1.2rem;
+  }
+
+  .marca h4 {
+    font-size: 0.8rem;
+  }
+
+  /* Header y botón */
+  .header-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .button {
+    font-size: 2.5rem;
+    padding: 0;
+  }
+
+  /* Sidebar (menú lateral) */
+  .sidebar {
+    width: 100vw;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  .primary-menu {
+    margin-top: 2rem;
+  }
+
+  .sidebar ul li a {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Intro */
+  .intro {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .intro p {
+    position: static;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Galería */
+  .gallery {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .delayed-section {
+    position: static;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .delayed-section img {
+    width: 100%;
+    height: auto;
+  }
+}
